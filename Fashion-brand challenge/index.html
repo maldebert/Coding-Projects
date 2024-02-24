@@ -24,8 +24,36 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 15px;
+        padding-top: 15px;
+      }
+
+      nav {
+        background-color: #fff;
+        font-family: "Noto Serif Display", serif;
         border-bottom: 1px solid #000000;
+        font-size: 15px;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline-block;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 15px;
+        color: #000;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        color: #4a087c;
       }
 
       .container-1 {
@@ -39,7 +67,7 @@
       .container-1-header {
         font-family: "Noto Serif Display", serif;
         font-optical-sizing: auto;
-        font-weight: 700;
+        font-weight: 500;
         font-style: normal;
         font-size: 42px;
         text-align: center;
@@ -91,13 +119,18 @@
         padding-top: 10px;
         padding-bottom: 10px;
       }
+
+      .container-4-header {
+        padding-top: 15px;
+        text-align: center;
+      }
       .dress-grid {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-column-gap: 50px;
         max-width: 100%;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 30px;
+        padding-bottom: 35px;
       }
 
       .dress-grid img {
@@ -145,6 +178,8 @@
 
       button {
         text-align: center;
+        justify-content: center;
+        font-family: "Noto Serif Display", serif;
         border: none;
         border-radius: 6px;
         color: #000000;
@@ -205,15 +240,57 @@
       }
 
       footer {
-        text-align: center;
-        font-size: 11px;
-        padding: 15px;
         background: linear-gradient(
           109.6deg,
           #d7fffb 11.2%,
           #fea7d6 54.5%,
           #edddf9 99.6%
         );
+        padding: 15px 35px 20px 35px;
+      }
+
+      .footer-section {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding-top: 15px;
+      }
+
+      .footer-section a:hover {
+        color: #4a087c;
+        cursor: pointer;
+      }
+
+      .footer-menu {
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 13px;
+      }
+
+      .footer-socials {
+        grid-area: 1 / 2 / 2 / 3;
+        font-size: 13px;
+      }
+
+      .footer-customer {
+        grid-area: 1 / 3 / 2 / 4;
+        font-size: 13px;
+      }
+      .footer-about {
+        grid-area: 1 / 4 / 2 / 5;
+        font-size: 13px;
+      }
+
+      .footer-section a {
+        color: #000000;
+      }
+
+      .bottom-details {
+        text-align: center;
+        font-size: 11px;
+        padding: 15px;
       }
     </style>
   </head>
@@ -224,10 +301,39 @@
         width="175px"
       />
     </div>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="https://lirikamatoshi.com/pages/about">About</a></li>
+          <li>
+            <a href="https://lirikamatoshi.com/collections/dresses">Dresses</a>
+          </li>
+          <li>
+            <a href="https://lirikamatoshi.com/collections/all-products"
+              >All Products</a
+            >
+          </li>
+          <li>
+            <a href="https://lirikamatoshi.com/pages/size-guide">Size Guide</a>
+          </li>
+          <li>
+            <a href="https://lirikamatoshi.com/pages/contact">FAQs & Contact</a>
+          </li>
+          <li>
+            <a href="https://lirikamatoshi.com/collections/sale">Sale</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="container-1">
       <div class="container-1-header">
         <h1>Dresses for the ages</h1>
       </div>
+      <a
+        href="https://lirikamatoshi.com/collections/new-arrivals"
+        target="_blank"
+        ><button>Shop new arrivals</button></a
+      >
     </div>
     <div class="container-2">
       <div class="container-2-text">
@@ -262,6 +368,7 @@
       🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌
     </div>
     <div class="container-4">
+      <h2 class="container-4-header">Let's have a fruit party!</h2>
       <div class="dress-grid">
         <a
           href="https://lirikamatoshi.com/collections/dresses/products/banana-midi-dress"
@@ -368,19 +475,96 @@
       🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌
     </div>
     <footer>
-      This project was coded by
-      <a href="https://instagram.com/whatcorinnedid" target="_blank"
-        >Marie Aldebert</a
-      >
-      for the
-      <a
-        href="https://www.shecodes.io/contests/trendsetting-clothing-brands-challenge"
-        >Trendy Clothing Brand Challenge</a
-      >, and is open-sourced on
-      <a
-        href="https://github.com/maldebert/Coding-Projects/tree/main/Fashion-brand%20challenge"
-        >GitHub</a
-      >
+      <div class="footer-section">
+        <div class="footer-menu">
+          <div class="footer-shop-now"><strong>SHOP NOW</strong></div>
+          <br />
+          <a href="https://lirikamatoshi.com/collections/tops"
+            >Tops & Sweaters</a
+          ><br />
+          <a href="https://lirikamatoshi.com/collections/dresses">Dresses</a
+          ><br />
+          <a href="https://lirikamatoshi.com/collections/pants"
+            >Pants & Skirts</a
+          ><br />
+          <a href="https://lirikamatoshi.com/collections/coats"
+            >Coats & Jackets</a
+          ><br />
+          <a href="https://lirikamatoshi.com/collections/accessories"
+            >Accessories</a
+          ><br />
+          <a href="https://lirikamatoshi.com/collections/bags-1">Bags</a>
+          <br />
+          <a href="https://lirikamatoshi.com/collections/for-pets">For pets</a>
+        </div>
+        <div class="footer-socials">
+          <div class="footer-follow"><strong>FOLLOW US</strong></div>
+          <br />
+          <a href="https://www.instagram.com/lirika.matoshi/" target="_blank"
+            >instagram</a
+          ><br />
+          <a href="https://www.tiktok.com/@lirikamatoshi" target="_blank"
+            >TikTok</a
+          ><br />
+          <a href="https://www.pinterest.com/lirikamatoshiinc/" target=""
+            >Pinterest</a
+          >
+        </div>
+        <div class="footer-customer">
+          <div class="footer-customer-text"><strong>HELPFUL LINKS</strong></div>
+          <br />
+          <a href="https://lirikamatoshi.com/pages/contact">FAQ</a><br />
+          <a href="https://lirikamatoshi.com/pages/contact">Contact</a><br />
+          <a href="https://lirikamatoshi.com/pages/size-guide">Size Guide</a
+          ><br />
+          <a href="https://lirikamatoshi.com/pages/terms-and-conditions"
+            >T&Cs</a
+          >
+        </div>
+        <div class="footer-about">
+          <div class="footer-about-press"><strong>AS SEEN ON</strong></div>
+          <a
+            href="https://www.vogue.com/article/strawberry-dress-lirika-matoshi-popular"
+            target="_blank"
+            >Vogue</a
+          ><br />
+          <a
+            href="https://www.forbes.com/sites/stephanrabimov/2020/04/27/20-fashion-brands-getting-most-creative-with-coronavirus-face-masks/#568ebfe75995"
+            target="_blank"
+            >Forbes</a
+          ><br />
+          <a
+            href="https://www.nytimes.com/2020/08/18/style/strawberry-dress-tiktok-instagram-who-designed-where-to-get.html"
+            target=""
+            >New York Times</a
+          ><br />
+          <a
+            href="https://www.elle.com/it/moda/street-style/news/a169223/collant-gioiello/"
+            target=""
+            >ELLE Italia</a
+          ><br />
+          <a
+            href="https://www.thecut.com/2017/05/lirika-matoshi-designer-instagram-fishnet-tights.html"
+            target="_blank"
+            >The Cut</a
+          >
+        </div>
+      </div>
+      <div class="bottom-details">
+        This project was coded by
+        <a href="https://instagram.com/whatcorinnedid" target="_blank"
+          >Marie Aldebert</a
+        >
+        for the
+        <a
+          href="https://www.shecodes.io/contests/trendsetting-clothing-brands-challenge"
+          >Trendy Clothing Brand Challenge</a
+        >, and is open-sourced on
+        <a
+          href="https://github.com/maldebert/Coding-Projects/tree/main/Fashion-brand%20challenge"
+          >GitHub</a
+        >
+      </div>
     </footer>
   </body>
 </html>
