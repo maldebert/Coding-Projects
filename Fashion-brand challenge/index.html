@@ -13,26 +13,26 @@
     <style>
       body {
         max-width: 100%;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        margin: 0px;
         font-family: "Noto Serif Display", serif;
       }
 
       .container-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 0px;
-        max-width: 100%;
       }
 
       .container-2-text {
         grid-column: 1 / 2;
-        background: radial-gradient(
-          circle at 7.5% 24%,
-          #edddf9 5%,
-          #fea7d6 25.5%,
-          #d7fffb 93.8%
+        background: linear-gradient(
+          109.6deg,
+          #edddf9 11.2%,
+          #fea7d6 54.5%,
+          #d7fffb 99.6%
         );
-        width: 100%;
-        height: 75%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -47,22 +47,78 @@
 
       .container-2 img {
         width: 100%;
-        height: 75%;
         object-fit: cover;
         grid-column: 2 / 2;
       }
 
+      .container-3 {
+        display: block;
+        background-color: #fae7d6;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
       .dress-grid {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-column-gap: 50px;
         max-width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
 
       .dress-grid img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+
+      .container-5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .container-5 img {
+        width: 100%;
+        object-fit: cover;
+        grid-column: 1 / 2;
+      }
+
+      .container-5-text {
+        grid-column: 2 / 2;
+        background: linear-gradient(
+          109.6deg,
+          #d7fffb 11.2%,
+          #fea7d6 54.5%,
+          #edddf9 99.6%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .paragraph-5 {
+        text-align: center;
+        padding: 100px;
+        font-size: 18px;
+        line-height: 150%;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #b758ff;
+      }
+
+      .container-6 img {
+        display: flex;
+        width: 100%;
       }
     </style>
   </head>
@@ -92,10 +148,11 @@
       />
     </div>
     <div class="container-3">
-      🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒
+      🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌
+      🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐
+      🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌
     </div>
     <div class="container-4">
-      <h3>Pick your favorite fruit dress</h3>
       <div class="dress-grid">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/493/original/banana.png?1708793328"
@@ -117,29 +174,47 @@
         />
       </div>
     </div>
+    <div class="container-3">
+      🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌
+      🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐
+      🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌
+    </div>
     <div class="container-5">
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/479/original/Snapinsta.app_344159322_576415107932409_3388573390477475090_n_1080.jpg?1708791742"
       />
-      <h3>A bit more about Lirika Matoshi</h3>
-      <p>
-        Lirika Matoshi launched in 2016 in New York City. As an emerging fashion
-        brand, the designer offers a wide variety of garments and accessories,
-        all creafted with luxury fabrics and maximum attention to details. The
-        brand is made of 100% women and operates out of New York City (offices
-        and showroom) and Kosovo (factory). <br /><br />The Lirika Matoshi
-        womenswear label is both effortlessly romantic and intrinsically
-        sophisticated—adding a hint of sparkle to any everyday outfit. Recently
-        Lirika Matoshi has also been added to Forbes 30 under 30 2022. <br />
-        <br />
-        Fun fact: Lirika Matoshi is the sister of Kosovo-based fashion and gown
-        design Teuta Matoshi.
-      </p>
+      <div class="container-5-text">
+        <span class="paragraph-5">
+          <h3>A bit more about Lirika Matoshi</h3>
+          Lirika Matoshi launched in 2016 in New York City. As an emerging
+          fashion brand, the designer offers a wide variety of garments and
+          accessories, all creafted with luxury fabrics and maximum attention to
+          details. The brand is made of 100% women and operates out of New York
+          City (offices and showroom) and Kosovo (factory). <br /><br />The
+          Lirika Matoshi womenswear label is both effortlessly romantic and
+          intrinsically sophisticated—adding a hint of sparkle to any everyday
+          outfit. Recently Lirika Matoshi has also been added to
+          <a
+            href="https://www.forbes.com/pictures/61a6674fc9fb30bf6703d8c8/lirika-matoshi-25-founder/"
+            target="_blank"
+            >30 under 30 2022.</a
+          >
+          <br />
+          <br />
+          Fun fact: Lirika Matoshi is the sister of Kosovo-based fashion and
+          gown design Teuta Matoshi.</span
+        >
+      </div>
     </div>
     <div class="container-6">
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/480/original/lemon_dress.png?1708791790"
       />
+    </div>
+    <div class="container-3">
+      🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌
+      🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐
+      🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌 🫐 🍓 🍉 🍋 🍒 🍌
     </div>
   </body>
 </html>
