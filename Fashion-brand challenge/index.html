@@ -20,6 +20,25 @@
         font-family: "Noto Serif Display", serif;
       }
 
+      .container-8 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 0px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #000000;
+      }
+
+      .container-8 p {
+        grid-column: 1 / 2;
+        text-align: end;
+      }
+
+      .container-8 img {
+        grid-column: 2 / 2;
+      }
+
       .container-1 {
         display: block;
         background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/500/original/lemon_dress_%281%29.png?1708799622");
@@ -131,12 +150,11 @@
       a {
         text-decoration: none;
         color: #c374ff;
-        cursor: pointer;
-        transition: ease-in-out;
       }
 
       a:hoover {
         color: #4a087c;
+        cursor: pointer;
       }
 
       .container-7-header {
@@ -186,9 +204,16 @@
     </style>
   </head>
   <body>
+    <div class="container-8">
+      <p>Presenting:</p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/515/original/llogo_lirika_matoshi_NY_no_back_2shi_540x_copy.png?1708806320"
+        width="175px"
+      />
+    </div>
     <div class="container-1">
       <div class="container-1-header">
-        <h1>Lirika Matoshi</h1>
+        <h1>Dresses for the ages</h1>
       </div>
     </div>
     <div class="container-2">
@@ -201,10 +226,10 @@
           fabulous twirl.
           <br />
           <br />
-          Yellow, blue or pink, it comes in many colors and many prints. Lemon,
-          cherries, strawberries, blueberries, watermelon and banana for the
-          perfect festive look. Ideal during the warm season, it brings summer
-          to the coldest winter.
+          Yellow, blue or pink, the dresses come in many colors and many prints.
+          Lemon, cherries, strawberries, blueberries, watermelon and bananas for
+          the perfect festive look. Ideal during the warm season, it brings
+          summer to the coldest winter.
         </p>
       </div>
       <img
@@ -257,7 +282,7 @@
           details. The brand is made of 100% women and operates out of New York
           City (offices and showroom) and Kosovo (factory). <br /><br />The
           Lirika Matoshi womenswear label is both effortlessly romantic and
-          intrinsically sophisticated—adding a hint of sparkle to any everyday
+          intrinsically sophisticated, adding a hint of sparkle to any everyday
           outfit. Recently Lirika Matoshi has also been added to
           <a
             href="https://www.forbes.com/pictures/61a6674fc9fb30bf6703d8c8/lirika-matoshi-25-founder/"
@@ -267,7 +292,8 @@
           <br />
           <br />
           Fun fact: Lirika Matoshi is the sister of Kosovo-based fashion and
-          gown design Teuta Matoshi.</span
+          gown designer
+          <a href="https://www.teutamatoshi.com/">Teuta Matoshi</a>.</span
         >
       </div>
     </div>
