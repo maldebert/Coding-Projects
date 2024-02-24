@@ -21,22 +21,11 @@
       }
 
       .container-8 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 0px;
+        display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 15px;
         border-bottom: 1px solid #000000;
-      }
-
-      .container-8 p {
-        grid-column: 1 / 2;
-        text-align: end;
-      }
-
-      .container-8 img {
-        grid-column: 2 / 2;
       }
 
       .container-1 {
@@ -107,14 +96,19 @@
         grid-template-columns: repeat(6, 1fr);
         grid-column-gap: 50px;
         max-width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
       }
 
       .dress-grid img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: filter 100ms ease-in-out;
+      }
+
+      .dress-grid img:hover {
+        transform: scale(1.1);
       }
 
       .container-5 {
@@ -145,8 +139,25 @@
       .paragraph-5 {
         text-align: center;
         padding: 100px;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 150%;
+      }
+
+      button {
+        text-align: center;
+        border: none;
+        border-radius: 6px;
+        color: #000000;
+        background-color: #ffffff;
+        margin-top: 25px;
+        padding: 15px 20px;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: #d7fffb;
+        color: #000000;
       }
 
       a {
@@ -154,7 +165,7 @@
         color: #c374ff;
       }
 
-      a:hoover {
+      a:hover {
         color: #4a087c;
         cursor: pointer;
       }
@@ -167,7 +178,7 @@
 
       .container-6 img {
         display: flex;
-        max-width: 100%;
+        width: 100%;
         height: auto;
       }
 
@@ -208,7 +219,6 @@
   </head>
   <body>
     <div class="container-8">
-      <p>Presenting:</p>
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/515/original/llogo_lirika_matoshi_NY_no_back_2shi_540x_copy.png?1708806320"
         width="175px"
@@ -222,7 +232,7 @@
     <div class="container-2">
       <div class="container-2-text">
         <p class="paragraph">
-          <a href="https://lirikamatoshi.com/">Lirika Matoshi</a>'s dresses are
+          <a href="https://lirikamatoshi.com/">Lirika Matoshi</a> dresses are
           the perfect head turner in any setting and occasion. Hapiness has more
           than a name, it has a shape. Those little bundles of joy are covered
           in glitter and tulle, have puffy sleeves, a beautiful silhouette and a
@@ -233,6 +243,12 @@
           Lemon, cherries, strawberries, blueberries, watermelon and bananas for
           the perfect festive look. Ideal during the warm season, it brings
           summer to the coldest winter.
+          <br />
+          <a
+            href="https://lirikamatoshi.com/collections/dresses"
+            target="_blank"
+            ><button>Shop dresses</button></a
+          >
         </p>
       </div>
       <img
@@ -247,24 +263,36 @@
     </div>
     <div class="container-4">
       <div class="dress-grid">
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/493/original/banana.png?1708793328"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/486/original/2.png?1708792729"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/488/original/1.png?1708792746"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/492/original/watermelon.png?1708793117"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/484/original/6.png?1708792674"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/491/original/3.png?1708792784"
-        />
+        <a
+          href="https://lirikamatoshi.com/collections/dresses/products/banana-midi-dress"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/493/original/banana.png?1708793328"
+        /></a>
+        <a
+          href="https://lirikamatoshi.com/collections/dresses/products/blueberry-midi-dress"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/486/original/2.png?1708792729"
+        /></a>
+        <a
+          href="https://lirikamatoshi.com/collections/dresses/products/strawberry-midi-dress"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/488/original/1.png?1708792746"
+        /></a>
+        <a
+          href="https://lirikamatoshi.com/collections/dresses/products/watermelon-midi-dress"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/492/original/watermelon.png?1708793117"
+        /></a>
+        <a
+          href="https://lirikamatoshi.com/collections/dresses/products/lemon-midi-dress"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/484/original/6.png?1708792674"
+        /></a>
+        <a
+          href="https://lirikamatoshi.com/collections/dresses/products/cherry-midi-dress"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/491/original/3.png?1708792784"
+        /></a>
       </div>
     </div>
     <div class="container-3">
@@ -296,13 +324,18 @@
           <br />
           Fun fact: Lirika Matoshi is the sister of Kosovo-based fashion and
           gown designer
-          <a href="https://www.teutamatoshi.com/">Teuta Matoshi</a>.</span
+          <a href="https://www.teutamatoshi.com/">Teuta Matoshi</a>.
+          <br />
+          <br />
+          <a href="https://lirikamatoshi.com/pages/about" target="_blank"
+            ><button>Find out more</button></a
+          ></span
         >
       </div>
     </div>
     <div class="container-7">
       <div class="container-7-header">
-        <h2>More beautiful dresses by Lirika Matoshi</h2>
+        <h2>Throwback to our Cinderella Collection with Disney</h2>
       </div>
       <div class="other-dresses-grid">
         <img
